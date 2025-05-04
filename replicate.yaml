@@ -1,0 +1,12 @@
+name: DevGod100/skyreels-v2
+dockerfile: Dockerfile
+predict:
+  cmd: ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
+  port: 8080
+input:
+  file:
+    type: path
+  prompt:
+    type: string
+  length:
+    type: integer
